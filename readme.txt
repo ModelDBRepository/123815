@@ -49,3 +49,7 @@ directory, in which there are also Matlab files for plotting them.
 EC input can be restored by setting ECWGT to its non-zero value.
 Other results were produced by setting particular connection weight variables to 0
 to remove certain synaptic pathways.
+
+20120326 In cad.mod the solve method was updated from euler to
+derivimplicit. See
+http://www.neuron.yale.edu/phpBB/viewtopic.php?f=28&t=592 for details.
