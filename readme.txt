@@ -38,8 +38,7 @@ Finally, the mean recall quality of the CA1 microcircuit is tested as the number
 of stored patterns is increased.
 
 Main file: HAM_StoRec_par.hoc (parallel version)
-           HAM_StoRec_ser.hoc (serial version - VERY SLOW! auto-launch from modeldb
-                               runs this version.)
+           HAM_StoRec_ser.hoc (serial version - VERY SLOW!)
 
 These files are configured to produce the results presented in figures 9 and 10
 of the paper, showing recall of a stored pattern when the entorhinal cortex input
@@ -50,6 +49,13 @@ EC input can be restored by setting ECWGT to its non-zero value.
 Other results were produced by setting particular connection weight variables to 0
 to remove certain synaptic pathways.
 
-20120326 In cad.mod the solve method was updated from euler to
-derivimplicit. See
-http://www.neuron.yale.edu/phpBB/viewtopic.php?f=28&t=592 for details.
+*********WARNING******************
+// Bug report, V. Cutsuridis and B. Graham, 21 Apr 2015
+We have been informed of a bug in the IA mod file,
+used for the OLM interneuron first introduced in ModelDB ac. 28316.
+Simulations (those for Figs.9 and 10) were thus rerun with the bug fixed.
+There are small quantitative differences from the published results, 
+but the model still works as described.
+To reproduce the published results, comment out the "rates(v)" line in the
+DERIVATIVE block of IA.mod.
+**********************************

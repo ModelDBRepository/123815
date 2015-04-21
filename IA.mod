@@ -83,6 +83,7 @@ INITIAL {
 
 DERIVATIVE deriv {  :Computes state variables m, h, and n rates(v)      
 		: at the current v and dt.
+        rates(v) : required to update inf and tau values
         a' = (ainf - a)/(tau_a)
         b' = (binf - b)/(tau_b)
 }
