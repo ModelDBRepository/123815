@@ -91,7 +91,7 @@ INITIAL {
       ns = nsinf
 	
 	VERBATIM
-	return 0;
+	return;
 	ENDVERBATIM
 }
 
