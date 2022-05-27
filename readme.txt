@@ -59,3 +59,8 @@ but the model still works as described.
 To reproduce the published results, comment out the "rates(v)" line in the
 DERIVATIVE block of IA.mod.
 **********************************
+
+Changelog
+---------
+2022-05: Updated MOD files to contain valid C++ and be compatible with
+         the upcoming versions 8.2 and 9.0 of NEURON.
