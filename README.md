@@ -16,15 +16,12 @@ These files are configured to produce the results presented in figures 9 and 10 
 EC input can be restored by setting ECWGT to its non-zero value.  
 Other results were produced by setting particular connection weight variables to 0 to remove certain synaptic pathways.
 
-*********WARNING******************  
+## WARNING
 Bug report, V. Cutsuridis and B. Graham, 21 Apr 2015  
 We have been informed of a bug in the IA mod file, used for the OLM interneuron first introduced in ModelDB ac. 28316. Simulations (those for Figs.9 and 10) were thus rerun with the bug fixed. There are small quantitative differences from the published results, but the model still works as described. To reproduce the published results, comment out the "rates(v)" line in the DERIVATIVE block of IA.mod.  
-**********************************
 
 Changelog
 ---------
 2022-05: Updated MOD files to contain valid C++ and be compatible with the upcoming versions 8.2 and 9.0 of NEURON.
-
----
 
 2025-06-02: Converted README to Markdown.
